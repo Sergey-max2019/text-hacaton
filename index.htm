@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Магія Гаррі Поттера</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0000aa, #6a0dad, #87cefa);
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            padding: 40px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .magic-title {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+            }
+        }
+
+        .magic-button {
+            display: block;
+            margin: 40px auto;
+            padding: 15px 30px;
+            background-color: #6a0dad;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .magic-button::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, #ff0, #f00, transparent);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+            transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .magic-button:active::after {
+            width: 300px;
+            height: 300px;
+            opacity: 0.6;
+        }
+
+        .magic-text,
+        .more-text {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 18px;
+            background: rgba(0, 0, 50, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="magic-title">Цікаві факти про Гаррі Поттера</div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg" alt="Гаррі Поттер"
+            style="max-width: 300px; border-radius: 15px; box-shadow: 0 0 20px rgba(255,255,255,0.6);">
+    </div>
+
+    <div class="magic-text">
+        <ul>
+            <li>Першу книгу написано в кафе без опалення.</li>
+            <li>Перекладено понад 80 мовами.</li>
+            <li>Гаррі народився 31 липня, як і Джоан Роулінг.</li>
+            <li>Ім’я Волдеморта означає «втеча від смерті» французькою.</li>
+            <li>Продано понад 500 мільйонів книг.</li>
+            <li>Герміона — Герміона Джин Ґрейнджер.</li>
+            <li>Сортувальний Капелюх вагався щодо Слизерину.</li>
+            <li>Дементори символізують депресію.</li>
+            <li>Фільми знімали 10 років.</li>
+            <li>Алан Рікман знав кінець Снейпа завчасно.</li>
+        </ul>
+    </div>
+
+    <button class="magic-button">Натисни для магії</button>
+
+    <div class="more-text">
+        <h2>Більше фактів про світ магії</h2>
+        <p>Гоґвортс має чотири факультети: Ґрифіндор, Слизерин, Когтевран (Рейвенклов) і Гафелпаф. Кожен з них має свої
+            риси характеру та засновника. Наприклад, Ґрифіндор цінує хоробрість, а Слизерин — амбіційність.</p>
+        <p>Мова заклять у світі магії має латинське походження. Наприклад, «Alohomora» відкриває замки, а «Expelliarmus»
+            — роззброює супротивника. Багато заклять були вигадані, але засновані на реальних мовах.</p>
+        <p>У чарівному світі існує власна валюта: ґалеони, срібляки та кнаті. 1 ґалеон = 17 срібляків, 1 срібляк = 29
+            кнатів. Гроші зберігаються у банку «Ґрінґотс», що охороняється гоблінами.</p>
+        <p>Кожна паличка в магічному світі унікальна: вона має деревину, довжину та сердечник. Наприклад, паличка Гаррі
+            зроблена з падуба і має пір’їну фенікса.</p>
+    </div>
+
+    <div class="more-text">
+        <h2>Цікаві деталі про персонажів</h2>
+        <p>Герміона Ґрейнджер — одна з найрозумніших учениць Гоґвортсу. Вона має маглівське походження, але це не
+            завадило їй стати однією з найкращих чарівниць свого часу. Вона також є засновницею ініціативи для захисту
+            прав ельфів-домовиків.</p>
+        <p>Рон Візлі походить з великої родини, яка завжди підтримувала Гаррі. Його батько працює у Міністерстві магії,
+            а родина живе у чарівному будинку під назвою «Барліг».</p>
+        <p>Северус Снейп — складний і трагічний персонаж, який більшу частину серії виглядає як антагоніст, але
+            виявляється одним з найвідданіших захисників Гаррі. Його історія — одна з найемоційніших у всій серії.</p>
+    </div>
+
+    <div class="more-text">
+        <h2>Чарівні істоти</h2>
+        <p>У світі Гаррі Поттера існує безліч магічних істот. Наприклад, гіпогріфи — це істоти з тілом коня і головою
+            орла. Їх можна приручити лише з повагою.</p>
+        <p>Фенікси, як Фоукс Альбуса Дамблдора, можуть воскресати з попелу та мають лікувальні сльози. Вони є символами
+            відродження й надії.</p>
+        <p>Дракони — одні з найнебезпечніших створінь. Вони охороняють найцінніші скарби та використовуються у
+            змаганнях, таких як Тричаклунський турнір.</p>
+    </div>
+
+</body>
+
+</html>
